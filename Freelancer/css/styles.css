@@ -1,0 +1,94 @@
+/*paleta de coleres*/
+:root{
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secunadrio: #0097A7;
+  --gris: #757575;
+}
+
+/*esta etiquetas hacen que los rem sean faciles de utilizar*/
+/*recomendable reutilizar en proyectos*/
+html{
+  font-size:62.5%;
+}
+body {
+  font-size:16px; /* 1rem = 10px */
+  font-family: 'Krub', sans-serif;
+}
+/*----*/
+
+/*clases inician con un "." */
+.titulo{
+  text-align: center;
+  font-size:3.8rem;
+
+}
+
+.titulo span{
+  font-size: 2rem;
+
+}
+
+.contenedor{
+  max-width: 120rem;
+  /* margin-top:0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; */
+
+ /*  margin: 0 auto 0 auto; */
+
+  margin: 0 auto;
+}
+.nav-bg{
+   background-color:var(--secunadrio);
+}
+
+.navegacion-principal{
+display: flex;
+flex-direction: column;
+}
+@media (min-width: 768px){
+  .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+.navegacion-principal a{
+  display:block;
+  text-align:center;
+color: var(--blanco);
+/* quita las lineas debajo que tienen los enlaces de la navegacion */
+text-decoration: none;
+font-size: 2rem;
+font-weight: 700;
+/* agrega un poco mas de espacio hacia afuera y hacia adentro */
+  padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+
+/* para un telefono
+@media(min-width:480px){
+  body{
+    background-color: #0097A7;
+  }
+}
+
+/* se utiliza para las tablets
+@media(min-width:768px){
+  body{
+    background-color:orange;
+  }
+} */
+
+.hero{
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -176,42 +176,45 @@
         </p>
       </section>
       </div> <!-- este es el cierre de la clase de servicios -->
-    </main>
+
 
     <section>
       <h2>Contacto</h2>
 
-      <form action="">
+      <form class="formulario">
         <fieldset>
           <legend>Contactame llenando todos los campos</legend>
-          <div>
+          <div class="contenedor-campos">
+          <div class="campo">
             <label for="">Nombre</label>
-            <input type="text" placeholder="Tu Nombre" />
+            <input class="input-text" type="text" placeholder="Tu Nombre" />
           </div>
 
-          <div>
+          <div class="campo">
             <label for="">Telefono</label>
-            <input type="tel" placeholder="Tu Telefono" />
+            <input  class="input-text" type="tel" placeholder="Tu Telefono" />
           </div>
 
-          <div>
+          <div class="campo">
             <label for="">Correo</label>
-            <input type="email" placeholder="Tu Email" />
+            <input class="input-text" type="email" placeholder="Tu Email" />
           </div>
 
-          <div>
+          <div class="campo">
             <label for="">Mensaje</label>
-            <textarea name="" id="" cols="" rows="5"></textarea>
+            <textarea class="input-text" name="" id="" cols="" rows="5"></textarea>
+          </div>
+          </div><!-- aqui termina el div de contendor-campos -->
+          <div class="enviar">
+            <input class="boton" type="submit" value="Enviar" />
           </div>
 
-          <div>
-            <input type="submit" value="Enviar" />
-          </div>
         </fieldset>
       </form>
     </section>
+    </main>
 
-    <footer>
+    <footer class="footer">
       <p>Todos los Derechos Reservados Fernando Soto Freelancer</p>
     </footer>
   </body>
